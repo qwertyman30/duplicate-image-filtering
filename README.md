@@ -9,7 +9,7 @@ eg. python main.py -d data/
 <b>USING DOCKER</b>
 1. docker build -t <NAME_OF_IMAGE> .<br>
 eg. `docker build -t filter .`
-2. docker run --rm -v <PATH_TO_DATA_FOLDER>:/app/data/ -v <PATH_TO_FILTERED_IMAGE>:/app/filtered --name <NAME_OF_CONTAINER> <NAME_OF_IMAGE> -d /app/data <ANY_ADDITIONAL_ARGS><br>
+2. docker run --rm -v <PATH_TO_DATA_FOLDER>:/app/data/ -v <PATH_TO_FILTERED_IMAGES_FOLDER>:/app/filtered --name <NAME_OF_CONTAINER> <NAME_OF_IMAGE> -d /app/data <ANY_ADDITIONAL_ARGS><br>
 eg. `docker run --rm -v ./data:/app/data/ -v ./filtered:/app/filtered/ --name filter-container filter -d /app/data`
 
 <b>ADDITIONAL ARGUMENTS THAT CAN BE SPECIFIED DURING RUN TIME</b><br>
