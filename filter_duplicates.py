@@ -68,7 +68,7 @@ if __name__ == "__main__":
     argparser.add_argument('-s',
                            '--similarity_threshold',
                            help='Similarity threshold',
-                           default=25000,
+                           default=15000,
                            type=int,
                            required=False)
     argparser.add_argument('-g',
